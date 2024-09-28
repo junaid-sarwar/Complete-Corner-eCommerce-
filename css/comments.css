@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right,#d35400,orange);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#comments-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment strong {
+    font-size: 1.2em;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #FFD700;
+}
+
+.like-icon {
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+}
