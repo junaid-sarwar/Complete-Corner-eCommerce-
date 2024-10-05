@@ -1,9 +1,9 @@
 body {
-    background: linear-gradient(to right,#d35400,orange);
+    background: linear-gradient(to right, #cc08cf, #480c79);
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
 }
 
 h1 {
@@ -11,9 +11,26 @@ h1 {
     margin-bottom: 20px;
 }
 
+nav {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins";
+}
+
+.navbar-nav .nav-link {
+    color: #d35400;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
 #comments-section {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);

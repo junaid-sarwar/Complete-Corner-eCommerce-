@@ -22,6 +22,7 @@ let userCredential = async function(myuserObject){
   .then(res => res.json())
   .then(data => {
     if (data.accessToken) {
+
       localStorage.setItem('username', myuserObject.userInput);
       localStorage.setItem('password', myuserObject.passKey);
 

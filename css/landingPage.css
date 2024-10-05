@@ -5,6 +5,9 @@ body {
     font-family: "Poppins";
     line-height: 1.6;
     background-color: #480c79;
+    background-image: url(../assets/images/shopmart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -28,11 +31,55 @@ nav {
     font-weight: bold;
 }
 
-footer {
-    margin-top: 20px;
-    text-align: center;
+.footer {
+    background-color: #480c79 !important;
     color: #fff;
-    font-size: 0.9em;
+    padding: 40px 0;
+    text-align: center; 
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+a.link.text-reset{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+a.link.text-reset:hover{
+    color: #f39c12 !important;
+}
+
+.footer .btn-outline {
+    border: 1px solid #f39c12;
+    color: #fff;
+}
+
+.footer .btn-outline:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.footer .form-outline input {
+    border: 1px solid #fff;
+}
+
+.footer .form-outline input:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+.footer .btn-outline.mb-4 {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+}
+
+.footer .btn-outline.mb-4:hover {
+    background-color: #d35400;
 }
 
 

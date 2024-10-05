@@ -7,6 +7,9 @@
 
 body{
     font-family: "Poppins";
+    background: linear-gradient(to right, #cc08cf, #480c79);
+    min-height: 100vh;
+    margin: 0;
 }
 
 .myImages{
@@ -31,11 +34,17 @@ body{
 }
 
 .navbar-container {
-    background-color: #d35400;
+    background-color: #fff;
+    border-style: solid;
+}
+
+.logo{
+    color: #480c79;
+    font-weight: bold;
 }
 
 .btn-element {
-    background-color: #d35400 !important;
+    background-color: #480c79 !important;
     border: none !important; 
 }
 
@@ -47,6 +56,27 @@ body{
 footer {
     margin-top: 20px;
     text-align: center;
-    color: #d35400;
+    color: #fff;
     font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+    .cart-icon {
+      position: absolute;
+      top: 0;
+      right: 13px;
+      transform: translateY(50%);
+      z-index: 10;
+    }
+    
+    .cart-icon i {
+      font-size: 1.5rem;
+    }
+
+    .cart-icon .cart-count {
+      position: absolute;
+      top: 0;
+      right: -5px;
+      font-size: 0.8rem;
+    }
+  }

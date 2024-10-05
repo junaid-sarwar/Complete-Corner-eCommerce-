@@ -1,5 +1,5 @@
-function fetchComments() {
-    fetch('https://dummyjson.com/comments')
+async function fetchComments() {
+    await fetch('https://dummyjson.com/comments')
         .then(res => res.json())
         .then(data => {
             var commentsSection = document.getElementById('comments-section');
