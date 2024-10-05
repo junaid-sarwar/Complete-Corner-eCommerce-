@@ -22,6 +22,9 @@ let userCredential = async function(myuserObject){
   .then(res => res.json())
   .then(data => {
     if (data.accessToken) {
+      localStorage.setItem('username', myuserObject.userInput);
+      localStorage.setItem('password', myuserObject.passKey);
+
       window.location.href = '../pages/landingPage.html';
     } else {
       document.getElementById("error-message").innerText = "Login failed. Please check your credentials.";
@@ -33,5 +36,3 @@ let userCredential = async function(myuserObject){
 }
 
 button();
-
-
