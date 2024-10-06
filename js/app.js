@@ -26,7 +26,7 @@ let userCredential = async function(myuserObject){
       localStorage.setItem('username', myuserObject.userInput);
       localStorage.setItem('password', myuserObject.passKey);
 
-      window.location.href = '../pages/landingPage.html';
+      window.location.href = './pages/landingPage.html';
     } else {
       document.getElementById("error-message").innerText = "Login failed. Please check your credentials.";
       Swal.fire({
