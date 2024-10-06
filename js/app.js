@@ -29,6 +29,10 @@ let userCredential = async function(myuserObject){
       window.location.href = '../pages/landingPage.html';
     } else {
       document.getElementById("error-message").innerText = "Login failed. Please check your credentials.";
+      Swal.fire({
+        icon: "error",
+        text: "Login failed. Please check your credentials!",
+      });
     }
   })
   .catch(error => {
