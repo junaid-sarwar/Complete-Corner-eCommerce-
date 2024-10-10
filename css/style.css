@@ -1,110 +1,111 @@
-body{
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-}
-.main{
-	width: 350px;
-	height: 500px;
-	background: red;
-	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
-}
-#chk{
-	display: none;
-}
-.login-details{
-	position: relative;
-	width:100%;
+	color: #fff;
+  }
+  
+  .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100%;
-}
-label{
-	color: #fff;
-	font-size: 2.3em;
-	justify-content: center;
-	display: flex;
-	margin: 50px;
+	padding: 20px;
+  }
+  
+  .login-wrapper {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 15px;
+	padding: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	max-width: 900px;
+	width: 100%;
+	box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+  }
+  
+  .login-details h2, .login h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 600;
+	color: #e6e6fa;
+  }
+  
+  .credentials {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+  }
+  
+  .credentials p {
+	font-size: 1rem;
+	margin-bottom: 5px;
+  }
+  
+  .credentials span {
 	font-weight: bold;
-	cursor: pointer;
-	transition: .5s ease-in-out;
-}
-input{
-	width: 60%;
-	height: 10px;
-	background: #e0dede;
-	justify-content: center;
+	color: #bb86fc;
+  }
+  
+  .login form {
 	display: flex;
-	margin: 20px auto;
-	padding: 12px;
+	flex-direction: column;
+  }
+  
+  input {
+	margin: 10px 0;
+	padding: 15px;
+	font-size: 1rem;
+	border-radius: 5px;
 	border: none;
 	outline: none;
-	border-radius: 5px;
-}
-#button{
-	width: 60%;
-	height: 40px;
-	margin: 10px auto;
-	justify-content: center;
-	display: block;
+	background: #222;
 	color: #fff;
-	background: #573b8a;
-	font-size: 1em;
-	font-weight: bold;
-	margin-top: 30px;
-	outline: none;
+  }
+  
+  button {
+	padding: 15px;
+	background-color: #bb86fc;
 	border: none;
+	font-size: 1rem;
+	font-weight: 600;
 	border-radius: 5px;
-	transition: .2s ease-in;
 	cursor: pointer;
-}
-#button:hover{
-	background: #6d44b8;
-}
-.login{
-	height: 460px;
-	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
-	transition: .8s ease-in-out;
-}
-.login label{
-	color: #573b8a;
-	transform: scale(.6);
-}
-
-#chk:checked ~ .login{
-	transform: translateY(-500px);
-}
-#chk:checked ~ .login label{
-	transform: scale(1);	
-}
-#chk:checked ~ .signup label{
-	transform: scale(.6);
-}
-
-.credentials {
-  font-size: 1.2em;
-  color: #fff;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.credentials p {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-#error-message{
-  text-align: center;
-  color: red;
-}
+	transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #9b59b6;
+	box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
+  }
+  
+  #error-message {
+	margin-top: 15px;
+	text-align: center;
+	color: #ff4d4d;
+	font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+	.login-wrapper {
+	  grid-template-columns: 1fr;
+	  padding: 30px;
+	}
+	
+	.login-details, .login {
+	  margin-bottom: 20px;
+	}
+  }
+  

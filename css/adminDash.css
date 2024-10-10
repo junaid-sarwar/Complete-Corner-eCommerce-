@@ -1,0 +1,51 @@
+body{
+    font-family: "Poppins";
+    background: linear-gradient(to right, #cc08cf, #480c79);
+}
+
+.navbar-nav .nav-link {
+    color: #d35400;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.user-detail-heading{
+    color: #fff;
+}
+
+#user-details-container .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+#user-details-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body:hover .user-details {
+    display: block;
+}
+
+.user-details {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9em;
+}

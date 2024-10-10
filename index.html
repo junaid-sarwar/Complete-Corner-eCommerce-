@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="shortcut icon" href="./assets/images/cart-logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./assets/images/cart-logo.png" type="image/x-icon">
 </head>
 <body>
-	<div class="main">  	
-    <input type="checkbox" id="chk" aria-hidden="true">
+  <div class="container">
+    <div class="login-wrapper">
+      <div class="login-details">
+        <form>
+          <h2>Credentials</h2>
+          <div class="credentials">
+            <p>Username: <span>michaelw</span></p>
+            <p>Password: <span>michaelwpass</span></p>
+          </div>
+          <div class="credentials">
+            <p>Username: <span>admin</span></p>
+            <p>Password: <span>admin@corner</span></p>
+          </div>
+        </form>
+      </div>
 
-    <div class="login-details">
-      <form>
-        <label for="chk" aria-hidden="true">Logging Detail</label>
-        <div class="credentials">
-          <p>Username: <span style="color: #d1a6ff;">michaelw</span></p>
-          <p>Password: <span style="color: #d1a6ff;">michaelwpass</span></p>
-        </div>
-      </form>
-    </div>
-
-    <div class="login">
-      <form>
-        <label for="chk" aria-hidden="true">Login</label>
-        <input type="user" name="user" id="user" placeholder="Email" required>
-        <input type="password" name="pswd" placeholder="Password" id="pass" required>
-        <button id="button" type="button">Login</button>
-      </form>
-      <p id="error-message"></p>
+      <div class="login">
+        <form>
+          <h2>Login</h2>
+          <input type="text" name="user" id="user" placeholder="Username" required>
+          <input type="password" name="pswd" placeholder="Password" id="pass" required>
+          <button id="button" type="button">Login</button>
+        </form>
+        <p id="error-message"></p>
+      </div>
     </div>
   </div>
 

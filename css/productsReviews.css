@@ -1,0 +1,66 @@
+body{
+    font-family: "Poppins";
+    background: linear-gradient(to right, #cc08cf, #480c79);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.review-card.bad {
+    background-color: #f8d7da;
+    border-left: 5px solid #e74c3c;
+}
+
+.review-card.bad h5 {
+    color: #c0392b;
+}
+
+.review-card.good {
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.review-card.good h5 {
+    color: #155724;
+}
+
+.reply-form {
+    margin-top: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.reply-form button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.reply-form button:hover {
+    background-color: #27ae60;
+}
